@@ -1,0 +1,4 @@
+@import "normalize.css";
+@import "header.css";
+
+body { padding-top: 100px; }

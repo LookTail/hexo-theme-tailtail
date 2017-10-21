@@ -1,0 +1,17 @@
+# Header
+nav:
+  Home: /
+  Archives: /archives
+  Tags: /tags
+
+avatar_path: /assets/avatar.jpg
+
+# Popover Information
+name: LookTail
+description: 我什么都不会啊怎么办？怎么办？就这么懒还想知道怎么办？
+find:
+  github: https://github.com/LookTail
+
+# Content
+excerpt_link: Read All
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <title><% if (page.title){ %><%= page.title %> | <% } %><%= config.title %></title>
+  <%- css('css/style.css') %>
+  <%- js('js/jquery-3.2.1.min.js')%>
+  <!--<%- css('css/bootstrap.min.css')%>-->
+  <%- js('js/bootstrap.min.js')%>
+</head>
+<body>  
+  <%- partial('_partial/header') %>
+  <div class="container">
+    <%- body %>
+    <%- partial('_partial/footer') %>
+  </div>
+</body>
+</html>
