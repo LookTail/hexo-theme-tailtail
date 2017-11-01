@@ -1,16 +1,18 @@
-<div id="root" class="header-warp">
-  <h3 class="logo-font">LookTail</h3>
-  <div id="about-wrapper" class="about-wrapper">
-    <a id="about" title="<%= config.author %>" href="#" class="img-container">
-      <img class="av-pic" src="<%= theme.avatar_path %>">  
+<header>
+  <div id="root" class="header-warp">
+    <h3 class="logo-font">LookTail</h3>
+    <div id="about-wrapper" class="about-wrapper">
+      <a id="about" title="<%= config.author %>" href="#" class="img-container">
+        <img class="av-pic" src="<%= theme.avatar_path %>">  
+      </a>
+    </div>
+    <nav class="navigation">
+      <a href="/">Home</a>
+      <a href="/archives">Archives</a>
     </a>
+    </nav>
   </div>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/archives">Archives</a>
-  </a>
-  </nav>
-</div>
+</header>
 <script type="text/javascript">
   $(document).ready(function(){
     $('#about').popover({template: '<div id="pop" class="popover" role="tooltip"><div class="arrow"></div><img class="popover-img" src="<%= theme.avatar_path %>"><div class="popover-info"><h2><%= theme.name %></h2><h4>About Me</h4><p><%= theme.description %></p><h4>Find Me</h4><ul><li>GitHub: <a href="<%= theme.find.github %>" target="_blank">LookTail</a></li></ul></div></div>', placement: "left", trigger: "manual"});

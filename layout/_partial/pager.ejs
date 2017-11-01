@@ -1,0 +1,10 @@
+<nav aria-label="Pager">
+  <ul class="pager">
+    <% if(page.prev != 0){ %>
+      <li class="previous"><a href="<%- url_for(page.prev_link) %>"><span>&larr;</span> Prev</a></li>
+    <% } %>
+    <% if(page.next != 0){ %>
+      <li class="next"><a href="<%- url_for(page.next_link) %>">Next <span>&rarr;</span></a></li>
+    <% } %>
+  </ul>
+</nav>

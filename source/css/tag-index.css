@@ -1,0 +1,31 @@
+.tags-wrapper {
+  width: 15%;
+  float: right;
+  margin-right: 5%;
+  padding: 10px;
+}
+
+.tags-wrapper > h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  color: #A0A0A0;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.tag-single {
+  float: left;
+  background-color: #F0F0F0;
+  border-radius: 25px;
+  min-width: 40px;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 8px 15px;
+}
+
+.tag-single > a {
+  display: block;
+  font-size: 14px;
+  line-height: 100%;
+}

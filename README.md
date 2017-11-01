@@ -9,3 +9,4 @@ A very simple Hexo Theme. It is written for self use and practice. Glad to see p
 - Post
 - Tag
 - Page
+- Footer

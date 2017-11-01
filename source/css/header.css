@@ -1,13 +1,19 @@
-.header-warp {
-  padding-left: 10%;
-  padding-right: 10%;
-  height: 70px;
-  line-height: 70px;
-  border-bottom: 1px solid #f0f0f0;
+header {
+  border-bottom: 1px solid #E0E0E0;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
+  background-color: #F8F8F8;
+}
+
+.header-warp {
+  margin: 0 auto;
+  height: 70px;
+  line-height: 70px;
+  width: 90%;
+  max-width: 980px;
+  overflow: hidden;
 }
 
 .logo-font {
@@ -30,35 +36,35 @@
   margin: 10px 0 30px 10px;
 }
 
-nav{
+.navigation{
   float: right;
 }
 
-nav > a {
+.navigation > a {
   position: relative;
   display: inline-block;
-  margin: 0 15px 0 0;
+  margin: 0 20px 0 0;
   color: #909090;
   text-decoration: none;
 }
 
-nav>a:after{
+.navigation > a:after{
   content: "";
   width: 0;
   height: 1px;
   background: #333;
   position: absolute;
-  top: 100%;
+  top: 99%;
   left: 50%;
   transition: all .4s;
 }
 
-nav>a:hover:after{/*原理是left:50%变成0%的同时，宽度从0%变成100%*/
+.navigation > a:hover:after{/*原理是left:50%变成0%的同时，宽度从0%变成100%*/
   left: 0%;
   width: 100%;
 }
 
-nav>a:hover {
+.navigation > a:hover {
   color: #333;
 }
 
@@ -89,12 +95,12 @@ nav>a:hover {
   border-bottom: 1px solid #f0f0f0;
 }
 
-ul{
+.popover-info ul{
   margin: 0;
   padding: 0 15px;
 }
 
-li > a {
+.popover-info li > a {
   color: #0e83cd;
   text-decoration: none;
 }

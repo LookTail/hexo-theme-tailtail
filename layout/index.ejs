@@ -1,3 +1,22 @@
-<div>
-    <a>aa</a>
-  </div>
+<div class="index-wrapper">
+  <% page.posts.each(post => { %>
+    <article class="post-wrapper">
+      <h1><%= post.title %></h1>
+      <span class="post-meta">
+        <span>Posted at</span>
+        <time><%= date(post.date) %></time>
+        <% post.tags.each(tag => { %>
+          <span><%= tag.name %></span>
+        <% }) %>
+      </span>
+      <div class="markdown-body">
+        <% if (post.excerpt){ %>
+          <%- post.excerpt %>
+        <% } else { %>
+          <%- post.content %>
+        <% } %>
+      </div>  
+    </article>
+  <% }) %>
+  <%- partial('_partial/pager') %> 
+</div>

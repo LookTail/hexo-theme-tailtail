@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
   <title><% if (page.title){ %><%= page.title %> | <% } %><%= config.title %></title>
   <%- css('css/style.css') %>
-  <%- js('js/jquery-3.2.1.min.js')%>
-  <!--<%- css('css/bootstrap.min.css')%>-->
-  <%- js('js/bootstrap.min.js')%>
+  <%- js('js/jquery-3.2.1.min.js') %>
+  <%- js('js/bootstrap.min.js') %>
 </head>
 <body>  
   <%- partial('_partial/header') %>
-  <div class="container">
+  <section class="content-container">
     <%- body %>
-    <%- partial('_partial/footer') %>
-  </div>
+  </section>
+  <%- partial('_partial/footer') %>
+  
 </body>
+
+
 </html>
