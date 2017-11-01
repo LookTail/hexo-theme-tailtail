@@ -6,6 +6,7 @@
 @import "pager.css";
 /* @import "bootstrap.min.css"; */
 @import "footer.css";
+@import "archive.css";
 
 html {
   height: 100%;
