@@ -1,4 +1,4 @@
-<section class="archive-post">
+<section class="archive-year">
     <h1>
         <%= year %>
     </h1>
@@ -7,9 +7,12 @@
       <% posts.forEach(post => { %>
         <li>
           <time><%= post.date.format("MMM Do") %></time>
-          <a href="<%= url_for(post.path) %>">
-            <h2><%= post.title %></h2>
+          <a href="<%= url_for(post.path) %>" class="title">
+            <%= post.title %>
           </a>
+          <% post.tags.each(tag => { %>
+            <a class="tags"><%= tag.name %></a>
+          <% }) %>
         </li>
       <% }) %>
     </ul>

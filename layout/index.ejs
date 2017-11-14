@@ -1,21 +1,17 @@
 <div class="index-wrapper">
   <% page.posts.each(post => { %>
-    <article class="post-wrapper">
-      <h1><%= post.title %></h1>
-      <span class="post-meta">
-        <span>Posted at</span>
-        <time><%= date(post.date) %></time>
-        <% post.tags.each(tag => { %>
-          <span><%= tag.name %></span>
-        <% }) %>
-      </span>
+    <article class="article-wrapper">
+      <a href="<%= url_for(post.path) %>" class="article-title">
+        <%= post.title %>
+      </a>
+      <%- partial('_partial/meta', {post: post}) %>
       <div class="markdown-body">
         <% if (post.excerpt){ %>
           <%- post.excerpt %>
         <% } else { %>
           <%- post.content %>
         <% } %>
-      </div>  
+      </div>
     </article>
   <% }) %>
   <%- partial('_partial/pager') %> 

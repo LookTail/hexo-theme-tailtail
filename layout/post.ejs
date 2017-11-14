@@ -1,0 +1,12 @@
+<div class="post-wrapper">
+  <h1><%= page.title %></h1>
+  <%- partial('_partial/meta', {post: page}) %>
+  <div class="markdown-body">
+    <%- page.content %>
+  </div>
+  <!--<nav aria-label="Back">
+    <ul class="pager" style="margin-top: 0">
+      <li class="next"><a href="#" onclick="history.back();"><span>&larr;</span> Back</a></li>
+    </ul>
+  </nav>-->
+</div>

@@ -1,0 +1,7 @@
+<div class="meta-wrapper">
+  <span>Posted at</span>
+  <time><%= date(post.date) %></time>
+  <% post.tags.each(tag => { %>
+    <a class="tags"><%= tag.name %></a>
+  <% }) %>
+</div>
